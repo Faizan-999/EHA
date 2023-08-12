@@ -1,0 +1,749 @@
+@media only screen and (max-width: 1199px){
+.header-content h1 {
+    font-size: 300px;
+    margin: 0px 0px 0px -20px;
+    }
+.textset1 {
+    text-align: justify;
+    padding: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    }
+.textset {
+    text-align: justify;
+    color: #d19f68;
+    padding: 25px 0px 0px 28px;
+    font-family: 'Poppins', sans-serif;
+    }
+.textset1 {
+    text-align: justify;
+    padding: 12px 30px 0px 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    }
+.img1 {
+    /*width: 100%;*/
+    height: 876px;
+    }
+.twobtns {
+    margin: -8px 0px 0px 0px;
+    padding: 0px 0px 15px 30px;
+    }
+.member-btn {
+    padding: 20px 5px 20px 30px;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    /*width: 32%;*/
+    }
+.ten-per {
+    font-size: 20px;
+    }
+	
+}
+
+@media only screen and (max-width: 991px) {
+.navbar{
+	padding: 15px;
+	}
+.header-content h1{
+	font-size: 200px;
+	}
+.header-content h2{
+	font-size: 36px;
+	}
+.about-image{
+	padding-top: 50px;
+	}
+.our-services .row{
+	justify-content: center;
+	}
+.our-services .col-md-4{
+   	-ms-flex: 0 0 50%;
+   	flex: 0 0 50%;
+   	max-width: 50%;
+	}
+.service-card{
+	padding-top: 50px;
+	}
+.footer-widget{
+	padding-bottom: 50px;
+	}
+.our-instagram .col-md-3{
+	-ms-flex: 0 0 50%;
+   	flex: 0 0 50%;
+   	max-width: 50%;
+	}
+.home header{
+	height: auto;
+	padding-bottom: 100px;
+	}
+.navbar-nav{
+	padding: 50px 0;
+	}
+.navbar-nav li{
+	padding-right: 0;
+	padding-bottom: 20px;
+	}
+.service-page-content{
+	padding: 30px 15px;
+	}
+.pricing-card{
+	padding: 30px;
+	}
+
+section.book-now-section {
+	padding-top: 54px;
+	padding-bottom: 11px;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+.img1 {
+    width: 770px;
+    height: auto;
+    }
+.member-btn {
+    padding: 18px 0px 20px 5px;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    /*width: 43%;*/
+    }
+.ten-per {
+    font-size: 17px;
+    }
+.member-dis {
+    font-family: 'Oswald', sans-serif;
+    font-size: 19px;
+    font-weight: 300;
+    color: white;
+    }
+.our-services-page{
+	padding-bottom: 40px;
+    }
+.our-services-page .col-md-6{
+	background-image: none !important;
+    }
+.service-page-image{
+	display: block !important;
+	padding: 40px 0;
+	}
+.service-page-content{
+	padding: 0;
+	}
+.recomd {
+	padding-top: 31%;
+	}
+.recomd-border1 {
+	top: 4%;
+	height: 95%;
+	}	
+.recomd-border2 {
+	/*width: 90%;*/
+	height: 89%;
+	}	
+.recomd-content{
+	line-height: 2.1;
+	text-align: center;
+	padding-left: 20px;
+	padding-right: 20px;
+	}	
+.recpmd-content-head {
+	text-align: center;
+	font-size: 32px;
+	padding-top: 38px;
+	padding-left: 0px;
+	}
+.men-before-after-container {
+	padding-top: 0px;
+	}	
+.hair-before-txt {
+	text-align: center;
+	font-size: 39px;
+    }	
+.hair-before-content {
+	text-align: center;
+	}	
+.women-before-content {
+	line-height: 1.9;
+	text-align: center;
+	padding-bottom: 28px;
+	}
+	.women-before-txt{
+	font-size: 29px;
+    text-align: center;
+	}
+
+	.goal-cards {
+	width: auto;
+	margin-bottom: 28px;
+	}
+
+
+	/* .hair-before-txt2 {
+		font-family: 'Poppins', sans-serif;
+		font-size: 12px;
+		font-weight: normal;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: 2;
+		letter-spacing: normal;
+		text-align: center;
+		color: #76726d;
+		padding-top: 21px;
+		padding-bottom: 65px;
+	} */
+	/* .call-us-content {
+		font-family: 'Poppins', sans-serif;
+		font-size: 12px;
+		font-weight: normal;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: 1.26;
+		letter-spacing: normal;
+		color: #ffffff;
+		padding: 20px 30px;
+	}
+	 */
+.card-border {
+	/*width: 91%;*/
+	height: 92%;
+	left: auto;
+	top: 4%;
+	}
+	
+.call-us-div {
+	margin-left: 0px;
+	margin-top: 12%;
+	/*width: 100%;*/
+	height: 67%;
+	background-color: #5b5452b0;
+	}
+	
+.call-us-content {
+	font-size: 12px;
+	padding-left: 29px;
+	padding-top: 15px;
+	}
+	
+.call-us-btn {
+	margin-left: 0px;
+	text-align: center;
+	margin-top: 5px;
+	}
+	
+a.call-us-btn-txt {
+	padding: 14px 30px;
+	font-size: 16.5px;
+	}
+}
+
+
+
+@media only screen and (min-width: 768px) and (max-device-width: 1024px) {
+	
+.carddiv {
+    background-color: white;
+    text-transform: uppercase;
+    color: #000000;
+    /*width: 100%;*/
+    padding: 19px 0px;
+    position: relative;
+    margin-top: -96px;
+    left: 0px;
+    }
+.carddiv1 {
+    background-color: #1b2336;
+    text-transform: uppercase;
+    color: #ffffff;
+    /*width: 100%;*/
+    padding: 20px 2px;
+    position: relative;
+    margin-top: -96px;
+    left: 0px;
+    font-size: 15px;
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+.img1 {
+    max-width: 415px;
+    height: auto;
+    }
+.navbar{
+	padding: 15px;
+ 	}
+.header-content h1{
+	font-size: 100px;
+	}
+.section-title h2{
+	font-size: 36px;		
+	}
+.header-content h2{
+	display: none;
+	}
+.theme-btn {
+	margin-top: 91px;
+	}
+.our-services .col-md-4{
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    /*max-width: 100%;*/
+	}
+.contact-content h2, .contact-content h2 a{
+	font-size: 36px;
+	}
+.responsive-order-1{
+	order: 1;
+	}
+.responsive-order-2{
+	order: 2;
+	}
+.responsive-order-3{
+	order: 3;
+	}
+.responsive-order-4{
+	order: 4;
+	}
+.instagram-page-title h3{
+	font-size: 22px;
+	}
+.our-blog .col-md-3{
+	display: none;
+	}
+	/*---------------------------------------
+   Hair colour css   
+-----------------------------------------*/
+.insta-img{
+	text-align: center;
+	}
+.balayge-name{
+	font-size: 20px;
+	padding-bottom: 30px;
+	}
+.booking-callus{
+	display: grid;
+	}
+a.bookonline {
+	margin-bottom: 12px;
+	text-align: center;
+	}
+a.call-us-btn{
+	text-align: center;
+	}
+.styling-2 {
+	font-family: 'Aston Bold';
+	font-size: 54px;
+	}
+.contact-us2 {
+	font-family: 'Aston Bold';
+	font-size: 54px;
+    }
+.contact-us{
+	font-size: 35px;
+	}
+			/*---------------------------------------
+  Hair extension for men and women 
+-----------------------------------------*/
+.hair-extension-div{
+	/*width: 278px;*/
+	height: 176px;
+	}
+.hair-extension-div{
+	font-size: 23px;
+	}	
+.color-and-styling {	  
+	font-size: 38px;
+	}
+.book-online-btn {
+	text-align: center;
+	}
+.instagram-title h2 {
+	font-size: 31px;
+	padding-top:40px;
+	}
+.insta-row-one {
+	padding-top: 27px;
+	}
+.book-now {  
+	font-size: 32px;
+	padding-top: 40px;
+	}
+.hair-extension-txt{
+	font-size: 22px;
+	}	
+
+section.hairdesigns {
+	text-align: center;
+	}
+.goal-cards{
+	margin-bottom: 43px;
+	}
+.goal-cards {
+	/*width: 290px;*/
+	}
+.call-us-div {
+	margin-top: 12%;
+	width: 100%;
+	height: 100%;
+	}	
+.call-us-content {
+	padding-top: 32px;
+	text-align: center;
+	font-size: 13px;
+	padding-left: 0px;
+	padding-right: 0px;
+	}
+.call-us-btn {
+	margin-left: 26%;
+	margin-top: 14%;
+	}
+.card-border {
+	left:-5%
+	}
+.col-md-6.call-us0img {
+	margin-top: 63px;
+	}
+.recomd-border2{
+	width: 83%;
+	}
+.recomd-border1{
+	width: 82%;
+	}
+.responsive-order-2{
+	order: 2;
+	}
+.responsive-order-1{
+	order: 1;
+    }
+.recomd-content {
+	padding-left: 0px;
+	padding-right: 0px;
+	text-align: center;
+    padding-top: 41px;
+	padding-bottom: 70px;
+	line-height: 2.1;
+    }
+.recomd{
+	padding-top: 57%;
+	padding-bottom: 146px;
+	font-size: 22px;
+    }
+.col-md-6.recomd-first-col {
+    margin-top: 40px;
+    }
+.recpmd-content-head {
+    font-family: 'baskoldface';
+    font-size: 24px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.21;
+    letter-spacing: normal;
+    color: #050505;
+    padding-top: 10%;
+    /* padding-left: 15%; */
+	text-align: inherit;
+    }
+.men-before-after-container {
+    padding-top: 45px;
+    }
+.hair-before-txt {
+    font-family: 'NeutraDisp Bold';
+    font-size: 22px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.75;
+    letter-spacing: normal;
+    text-align: left;
+    color: #847a75;
+    /* padding-top: 66px; */
+    }
+.hair-before-content {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2;
+    letter-spacing: normal;
+    text-align: center;
+    color: #050505;
+    padding-top: 30px;
+    }
+
+.hair-before-content {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2;
+    letter-spacing: normal;
+    text-align: center;
+    color: #050505;
+    padding-top: 30px;
+    }
+.hair-before-txt2{
+    text-align: center;
+    }
+.still-question {
+    font-size: 21px;
+    }
+.still-question-two{
+    padding-top: 22px;
+    font-size: 22px;
+    }
+.women-before-txt {
+    font-size: 26px;
+    }
+.women-before-content{
+	text-align: center;
+	padding-bottom: 34px;
+    }
+	/* .call-us-div {
+		margin-top: -2%;
+		width: auto;
+		height: auto;
+		background-color: #5b545266;
+	}
+	.call-us-btn {
+		
+		margin-left: 36%;
+	}
+	.call-us-content{
+		padding: 45px 29px 44px 54px;
+	} */
+
+.any-question-form {
+	font-family: 'Barlow Condensed', sans-serif;
+	font-weight: 500;
+	font-size: 37px;
+	color: #635d5b;
+	}
+.call-us-form{
+	font-family: 'Barlow Condensed', sans-serif;
+	font-weight: 500;
+	font-size: 26px;
+	color: #635d5b;
+	padding-top: 10px;
+	}
+.send-us-form{
+	font-family: 'Barlow Condensed', sans-serif;
+	font-weight: 500;
+	font-size: 26px;
+	color: #635d5b;
+	}
+.call-us-number-form{
+	font-family: 'Barlow Condensed', sans-serif;
+	font-weight: 600;
+	font-size: 33px;
+	color: #635d5b;
+	}
+.email-form{
+	font-family: 'Barlow Condensed', sans-serif;
+	font-weight: 600;
+	font-size: 33px;
+	color: #635d5b;
+	padding-bottom: 0px;
+	}
+input#name {
+	padding: 0px;
+	}
+input#email {
+	padding: 0px;
+	}
+textarea#message {
+	padding-left: 0px;
+	}
+button#submit {
+	padding: 15px;
+	margin-bottom: 15px;
+	}
+	/* about-us-2 */
+ /* CSS */
+.carddiv{
+	background-color: white;
+	text-transform: uppercase;
+	color: #000000;
+	width: 100%;
+	padding: 26px 13px;
+	left: 0px;
+    }
+.carddiv1{
+	background-color: #1b2336;
+	text-transform: uppercase;
+	color: #ffffff;
+	width: 100%;
+	padding: 26px 13px;
+	margin-top: -121px;
+	left: 0px;
+    }
+.frm .form-control{
+	width: 100%;
+    }
+.frm{
+	padding-bottom: 30px;
+	display: block;
+    }
+.member-btn {
+	padding: 20px 5px 20px 30px;
+	background-color: black;
+	color: white;
+	text-transform: uppercase;
+	display: block;
+	margin-top: 10px;
+    }
+.timing {
+	padding-top: 0px;
+    }
+.exclusive{
+	padding-top: 70px;
+	padding-bottom: 15px;
+    }
+.lol {
+	margin-top: 10px;
+	padding: 25px 25px;
+	background-color: white;
+	width: 280px;
+    }
+#submt {
+	background-color: #5b5452;
+	padding: 7px 45px;
+	color: white;
+	margin-left: 45px;
+    }
+
+.cart{
+	font-size: 84px;
+    }
+.about-us-txt{
+	font-size: 58px;
+    }
+/* ......................booking tabs.......... */
+.tab button{
+	width: 100%;
+    }
+div.zabuto_calendar .table {
+	width: 100%;
+    }
+/* ................Hair-restration33.................... */
+.textset{
+
+    }
+.textset1 {
+    text-align: justify;
+    padding: 20px 20px 20px 30px;
+    }
+button.btnset {
+    margin-bottom: 10px;
+    width: 50%;
+    }
+.btnset2 {
+    width: 50%;
+    }
+.twobtns{
+	display: grid;
+	margin-left: 0px;
+    }
+
+.photo-restration{
+	text-align: center;
+    }
+h1.restoration33-txt{
+	font-size: 35px;
+    }
+}
+
+
+@media only screen and (max-width: 450px){
+.img1 {
+    max-width: 411px;
+    height: auto;
+    }
+.ten-per {
+    font-family: 'Oswald', sans-serif;
+    font-size: 29px;
+    font-weight: 600;
+    margin: 10px 0px -30px 0px;
+    }
+i.far.fa-heart {
+    padding: 0px 0px 0px 5px;
+    }
+.member-btn {
+    font-size: 10px;
+    width: 43%;
+    }
+.maincont2 {
+    padding: 15px 0px 0px 0px;
+    }
+.member-btn {
+    font-size: 10px;
+    width: 46%;
+    }
+.theme-btn {
+    margin-top: 20px;
+    }
+}
+
+
+@media only screen and (max-width: 375px) {
+.img1 {
+    max-width: 375px;
+    height: auto;
+    }
+.header-content h1{
+	font-size: 80px;
+	}
+.about-content h2 {
+	font-size: 32px;
+	}
+h1.restoration33-txt{
+	font-size: 35px;
+	}
+.theme-btn {
+    margin-top: 10px;
+    }	
+}
+
+@media only screen and (max-width: 360px) {
+.img1 {
+    max-width: 360px;
+    height: auto;
+    }
+}
+
+
+@media only screen and (max-width: 330px) {
+.img1 {
+    max-width: 320px;
+    height: auto;
+    }
+button.btnset {
+    margin-bottom: 10px;
+    width: 95%;
+    }
+.btnset2 {
+    width: 95%;
+    }
+.member-btn {
+    font-size: 10px;
+    width: 55%;
+    }
+.page-title:before {
+    left: 40%;
+    font-size: 45px;
+    }
+.page-title h2 {
+    font-size: 20px;
+    }
+.pricing-table {
+    padding: 0px 0px 0px 0px;
+    }
+.pricing-table {
+    padding: 0px 0px 0px 0px;
+    }
+}

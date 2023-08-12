@@ -1,0 +1,2433 @@
+@font-face {
+    font-family: 'Aston Bold';
+    src: url('fonts/Aston-Script-Pro-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'AvenirNext Bold';
+    src: url('fonts/AvenirNextLTPro-Regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NeutraDisp Bold';
+    src: url('fonts/NeutraDisp-Titling.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'baskoldface';
+    src: url('fonts/baskoldface-version-1-05.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Myridpro';
+    src: url('fonts/Myriad\ Pro\ Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, menu, nav, output,
+ruby, section, summary,
+time, mark, audio, video, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    outline:none;
+    text-decoration: none !important;
+}
+button:focus,
+button:active,
+input:active,
+input:focus,
+textarea:active,
+textarea:focus {
+    outline: 0 !important;
+    box-shadow: none !important;
+}
+* {
+    box-sizing: border-box;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*---------------------------------------
+   General CSS        
+-----------------------------------------*/
+
+body{
+    overflow-x: hidden;
+}
+.section-title h2{
+    font-family: 'Aston Bold';
+    font-size: 54px;
+    font-weight: bold;
+    letter-spacing: 5.4px;
+    color: rgba(91, 84, 82, 0.37);
+}
+.theme-btn{
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 15px 40px;
+    background-color: #5b5452;
+    border: 2px solid #5b5452;
+    display: inline-block;
+    transition: all 0.3s;
+}
+.theme-btn:hover{
+    background-color: transparent;
+    color: #5b5452;
+}
+.theme-btn.shade-btn{
+    box-shadow: 7px 7px 30px 0 rgba(230, 188, 163, 0.7);
+}
+.page-banner{
+    background-image: url('images/page-banner.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 100px 0;
+}
+.page-title{
+    position: relative;
+}
+.page-title h2{
+    font-size: 60px;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center;
+    z-index: 2;
+    position: relative;
+}
+.page-title:before{
+    font-family: 'Aston Bold';
+    content: 'EHA';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    color: rgba(230, 188, 163, 0.4);
+    z-index: 1;
+}
+
+/*---------------------------------------
+   Header CSS        
+-----------------------------------------*/
+
+.home header{
+    background-image: url('images/header-bg.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 800px;
+}
+.header-content{
+    text-align: center;
+}
+.header-content h1{
+    font-size: 350px;
+    font-weight: bold;
+    letter-spacing: 0.4em;
+    text-indent: 0.4em;
+    color: rgba(155, 134, 127, 0.63);
+}
+.header-content h2{
+    font-family: 'Aston Bold';
+    font-size: 54px;
+    font-weight: bold;
+    letter-spacing: 5.4px;
+    color: #5b5452;
+    padding-bottom: 30px;
+}
+.navbar{
+    padding: 10px 0;
+}
+.navbar-brand{
+    padding: 0;
+    margin:  0;
+    line-height: 0;
+}
+.navbar-brand img{
+    max-width: 130px;
+}
+.home .navbar-brand img{
+    max-width: 100%;
+}
+.navbar-nav{
+    align-items: center;
+}
+.navbar-nav li{
+    padding-right: 15px;
+}
+.navbar-nav li:last-child{
+    padding-right: 0;
+}
+.navbar-nav li a{
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #1b2336 !important;
+    text-transform: uppercase;
+    padding: 0 !important;
+    transition: all 0.3s;
+}
+.navbar-nav li.active a{
+    border-bottom: 1px solid #ecccba;
+}
+.navbar-nav li.menu-btn a{
+    color: #fff !important;
+    padding: 15px 40px !important;
+    background-color: #1b2336;
+    border: 2px solid #1b2336;
+    box-shadow: 7px 7px 30px 0 rgba(230, 188, 163, 0.7);
+}
+.navbar-nav li.menu-btn a:hover{
+    background-color: transparent;
+    color: #1b2336 !important;
+}
+.navbar-nav li.grey-color a{
+    background-color: #9b867f;
+    border: 2px solid #9b867f;
+}
+
+/*---------------------------------------
+   About Section CSS      
+-----------------------------------------*/
+
+.about-us{
+    padding: 50px 0;
+    position: relative;
+}
+.about-us:before{
+    content: url('images/about-bg.png');
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.about-content h2{
+    font-size: 37px;
+    color: #5b5452;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.about-content p{
+    font-size: 12px;
+    line-height: 2;
+    color: #5b5452;
+    padding-top: 20px;
+}
+.about-content a{
+    margin-top: 30px;
+}
+
+/*---------------------------------------
+   Testimonials Section CSS      
+-----------------------------------------*/
+
+.testimonials{
+    padding: 80px 0;
+    background-color: #f7f1ed;
+    position: relative
+}
+.testimonials:before{
+    content: url('images/testimonial-bg.png');
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.testimonial-content h2{
+    font-size: 37px;
+    color: #5b5452;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+.testimonial-slider{
+    padding-top: 50px;
+}
+.testimonial-card{
+    border: 1px solid #847a75;
+    padding: 15px;
+    text-align: center;
+}
+.testimonial-card img{
+    max-width: 70px;
+    margin: 0 auto;
+}
+.testimonial-card h6{
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #d6cec9;
+    text-transform: uppercase;
+    padding-top: 20px;
+}
+.testimonial-card h2{
+    font-size: 24px;
+    font-weight: bold;
+    color: #847a75;
+    padding-top: 30px;
+}
+.testimonial-card p{
+    font-size: 12px;
+    font-style: italic;
+    line-height: 2;
+    color: #9f9793;
+    padding: 20px;
+    position: relative;
+}
+.testimonial-card p:before{
+    content: "\f10d";
+    position: absolute;
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900;
+    left: 0;
+    top: 30px;
+    color: rgba(214, 206, 201, 0.45);
+    font-size: 50px;
+    line-height: 0;
+}
+.testimonial-card i{
+    color: #e6bca3;
+}
+.testimonial-button{
+    text-align: center;
+    padding-top: 50px;
+}
+
+/*---------------------------------------
+   Services Section CSS      
+-----------------------------------------*/
+
+.services{
+    padding: 80px 0;
+}
+.services-title{
+    text-align: center;
+}
+.services-title h2{
+    font-size: 37px;
+    color: #5b5452;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.services-title p{
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 2;
+    color: #9f9793;
+    max-width: 500px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+.our-services{
+    padding-top: 50px;
+}
+.service-card{
+    text-align: center;
+}
+.service-content{
+    padding-top: 30px;
+}
+.service-content h2{
+    font-size: 29px;
+    font-weight: bold;
+    color: #5b5452;
+    text-transform: uppercase;
+}
+.service-content p{
+    font-size: 12px;
+    line-height: 2;
+    color: #9f9793;
+    padding: 20px 0;
+}
+
+/*---------------------------------------
+   Contact Section CSS      
+-----------------------------------------*/
+
+.contact{
+    background-image: url('images/section-bg.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 80px 0;
+}
+.contact-content{
+    text-align: center;
+}
+.contact-content p{
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #ffffff;
+}
+.contact-content h2,
+.contact-content h2 a{
+    font-size: 48px;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 30px 0;
+}
+.contact-content .contact-btn{
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 15px 40px;
+    background-color: transparent;
+    border: 2px solid #e6bca3;
+    display: inline-block;
+    transition: all 0.3s;
+}
+.contact-content .contact-btn:hover{
+    background-color: #e6bca3;
+}
+
+/*---------------------------------------
+   Instagram Section CSS      
+-----------------------------------------*/
+
+.instagram{
+    padding: 80px 0;
+}
+.instagram-title{
+    text-align: center;
+}
+.instagram-title h2{
+    font-size: 37px;
+    color: #5b5452;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.our-instagram{
+    padding-top: 50px;
+}
+.instagram-image img{
+    width: 100%;
+}
+
+/*---------------------------------------
+   Map Section CSS      
+-----------------------------------------*/
+
+._map{
+    height: 500px;
+}
+
+/*---------------------------------------
+   Footer Section CSS      
+-----------------------------------------*/
+
+footer{
+    background-image: url('images/section-bg.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 80px 0;
+}
+.footer-about p{
+    font-size: 15px;
+    line-height: 2;
+    text-align: justify;
+    color: #ffffff;
+}
+.footer-widget h2{
+    font-size: 31px;
+    font-weight: 600;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+}
+.footer-timing ul{
+    list-style: none;
+}
+.footer-timing ul li{
+    font-size: 16px;
+    letter-spacing: 0.38px;
+    color: #ffffff;
+    padding-bottom: 10px;
+}
+.footer-form{
+    padding: 30px;
+    background-color: #fff;
+}
+.footer-form .form-control{
+    width: 100%;
+    font-size: 12px;
+    color: #5b5452;
+    padding: 15px;
+    border: 1px solid #5b5452;
+    border-radius: 0;
+}
+.footer-form .submit-btn{
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 10px 40px;
+    background-color: #5b5452;
+    border: 2px solid #5b5452;
+    display: block;
+    margin-left: auto;
+    transition: all 0.3s;
+}
+.footer-form .submit-btn:hover{
+    background-color: transparent;
+    color: #5b5452;
+}
+
+/*---------------------------------------
+   Service Page CSS      
+-----------------------------------------*/
+
+.service-page-content{
+    padding: 60px 30px;
+}
+.service-page-content h2{
+    font-size: 30px;
+    color: #5b5452;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.service-page-content h4{
+    font-size: 18px;
+    color: #5b5452;
+    font-weight: 500;
+    padding: 20px 0;
+}
+.service-page-content ul{
+    list-style: none;
+}
+.service-page-content li{
+    font-size: 14px;
+    line-height: 1.8;
+    color: #5b5452;
+    display: flex;
+}
+.service-page-content ul li:before {
+    content: '✓';
+    color: #9b867f;
+    padding-right: 10px;
+}
+.service-page-content p{
+    font-size: 14px;
+    color: #5b5452;
+    padding-bottom: 20px;
+}
+
+/*---------------------------------------
+   Pricing Page CSS      
+-----------------------------------------*/
+
+.pricing-table{
+    padding: 50px 0 80px 0;
+}
+.pricing-card{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 60px;
+    margin-top: 30px;
+    position: relative;
+}
+.pricing-card:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.pricing-card-content{
+    position: relative;
+    z-index: 1;
+}
+.pricing-card h2{
+    font-size: 30px;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #fff;
+}
+.pricing-card ul{
+    list-style: none;
+    padding-top: 30px;
+}
+.pricing-card ul li{
+    font-size: 18px;
+    color: #fff;
+    line-height: 1.8;
+    display: flex;
+}
+.pricing-card ul li:before {
+    content: '✓';
+    color: #9b867f;
+    padding-right: 10px;
+}
+.pricing-card-button{
+    text-align: center;
+    padding-top: 30px;
+}
+.pricing-card-button .theme-btn{
+    color: #5b5452;
+    background-color: #fff;
+    border: 2px solid #fff;
+}
+.pricing-card-button .theme-btn:hover{
+    background-color: transparent;
+    color: #fff;
+}
+
+/*---------------------------------------
+   Gallery Page CSS      
+-----------------------------------------*/
+
+/* .our-gallery{
+    padding: 80px 0;
+} */
+.our-gallery .cbp-l-caption-body i{
+    font-size: 40px;
+    color: #fff;
+}
+.instagram-page{
+    padding-bottom: 80px;
+}
+.instagram-page-title{
+    text-align: center;
+}
+.instagram-page-title h2{
+    font-size: 37px;
+    color: #5b5452;
+    font-weight: 700;
+}
+.instagram-page-title h3{
+    font-size: 37px;
+    color: #9b867f;
+    font-weight: 500;
+}
+.instagram-page-images{
+    padding-top: 40px;
+}
+
+/*---------------------------------------
+   Blog Page CSS      
+-----------------------------------------*/
+
+.our-blog{
+    padding: 50px 0;
+}
+.blog-card{
+    padding: 30px 0;
+    border-bottom: 1px solid #5b5452;
+}
+.blog-card h2{
+    font-size: 30px;
+    color: #5b5452;
+    font-weight: 700;
+    padding-bottom: 15px;
+}
+.blog-card h6{
+    font-size: 14px;
+    color: #5b5452;
+    font-weight: 500;
+}
+.blog-card img{
+    padding: 30px 0;
+}
+.blog-card p{
+    font-size: 16px;
+    color: #5b5452;
+    padding-bottom: 30px;
+}
+.blog-sidebar{
+    padding-top: 30px;
+}
+.blog-category h2{
+    font-size: 30px;
+    color: #5b5452;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+.blog-category ul{
+    list-style: none;
+}
+.blog-category ul li{
+    padding: 10px 0;
+    border-bottom: 1px solid #e8ebee;
+}
+.blog-category ul li a{
+    font-size: 16px;
+    color: #5b5452;
+    font-weight: 600;
+}
+.recent-posts{
+    padding-top: 30px;
+}
+.recent-posts h2{
+    font-size: 30px;
+    color: #5b5452;
+    font-weight: 700;
+}
+.recent-posts-card{
+    padding-top: 30px;
+}
+.recent-posts-card p{
+    font-size: 14px;
+    color: #5b5452;
+    padding-top: 20px;
+}
+
+/*---------------------------------------
+   Booking Page CSS      
+-----------------------------------------*/
+
+.booking{
+    padding: 50px 0 80px 0;
+}
+.booking-card{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px;
+    margin-top: 30px;
+    position: relative;
+    height: 100%;
+    min-height: 400px;
+}
+.booking-card-content{
+    border: 2px solid #847a75;
+    position: relative;
+    text-align: center;
+    height: 100%;
+}
+.booking-card-content:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.booking-card-content-call,
+.booking-card-form,
+.booking-card-timing{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+}
+.booking-card-content-call h2,
+.booking-card-form h2,
+.booking-card-timing h2{
+    font-size: 25px;
+    font-weight: 600;
+    color: #fff;
+    padding-bottom: 20px;
+}
+.booking-card-content-call h6,
+.booking-card-content-call a{
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    padding-bottom: 10px;
+}
+.booking-card-form{
+    padding: 0 15px;
+}
+.booking-card-form .form-control{
+    font-size: 14px;
+    color: #fff;
+    border: 0;
+    border-radius: 0;
+    background-color: transparent;
+    border-bottom: 1px solid #fff;
+    text-align: center;
+}
+.booking-card-form .form-control::placeholder{
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+}
+.booking-card-form .theme-btn{
+    color: #5b5452;
+    background-color: #fff;
+    border: 2px solid #fff;
+    margin-top: 30px;
+}
+.booking-card-form .theme-btn:hover{
+    background-color: transparent;
+    color: #fff;
+}
+.booking-card-timing ul{
+    list-style: none;
+}
+.booking-card-timing ul li{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+.calendar-icon{
+    padding-right: 20px;
+}
+.booking-timing{
+    text-align: left;
+}
+.booking-card-timing ul li i{
+    font-size: 20px;
+    color: #fff;
+}
+.booking-card-timing ul li h6{
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: underline;
+}
+.booking-card-timing ul li p{
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+}
+.appointment-form{
+    padding-bottom: 80px;
+}
+.appointment-form-title h2{
+    padding-bottom: 25px;
+    font-size: 37px;
+    color: #5b5452;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+
+/* ......................booking tabs.......... */
+
+.tab {overflow: hidden; border: 1px solid #ccc; 
+    background-color: #f1f1f1;}
+    
+    .tabcontent {display: none; padding: 6px 12px; border: 1px solid #ccc;
+        border-top: none;}
+        
+    .tab button {
+        width: 33%;
+        background-color: inherit; float: left; border: none;
+        outline: none; cursor: pointer; padding: 14px 16px; 
+        transition: 0.3s;}
+        
+    .tab button:hover {background-color: rgb(255, 255, 255);}
+    
+    .tab .active {background-color:white;}
+    button.tablinks.active {
+      
+        border-top-right-radius: 100px;
+        border-bottom-right-radius: 100px;
+    }
+    .tabcontent {display: none; padding: 6px 12px;
+    
+    border: 1px solid #ccc; border-top: none;}
+    
+    table {font-family: arial, sans-serif; border-collapse: collapse;
+        width: 100%;}
+    
+    td, th {border: 1px solid #dddddd; padding: 8px; 
+        text-align: center;}
+    
+    /*Change color to gray*/
+    tr:nth-child(even) {
+        background-color: #dddddd;}
+    
+    .actived a{color:green}
+    .actived a:hover{ font-weight: bold}
+    
+    .deactivated a{color:red}
+    .deactivated a:hover{ font-weight: bold}
+    
+    .available {color:green; }
+    .disable{ color: red; font-weight: bold}
+    .intraining{color: blue; font-weight: bold}
+    .vacation{ font-weight: bold}
+
+    /* ..........................CALANDAR.......................... */
+    /**
+ * Zabuto Calendar
+ */
+
+ .consolution-div.border {
+     padding: 25px;
+}
+
+div.zabuto_calendar {
+    margin: 0;
+    padding: 0;
+}
+
+div.zabuto_calendar .table {
+    width: 50%;
+    margin: 0;
+    padding: 0;
+}
+
+div.zabuto_calendar .table th,
+div.zabuto_calendar .table td {
+    padding: 4px 2px;
+    text-align: center;
+}
+
+div.zabuto_calendar .table tr th,
+div.zabuto_calendar .table tr td {
+    background-color: #ffffff;
+}
+
+div.zabuto_calendar .table tr.calendar-month-header th {
+    background-color: #fafafa;
+}
+
+div.zabuto_calendar .table tr.calendar-month-header th span {
+    cursor: pointer;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+div.zabuto_calendar .table tr.calendar-dow-header th {
+    background-color: #f0f0f0;
+}
+
+div.zabuto_calendar .table tr:last-child {
+    border-bottom: 1px solid #dddddd;
+}
+
+div.zabuto_calendar .table tr.calendar-month-header th {
+    padding-top: 12px;
+    padding-bottom: 4px;
+}
+
+div.zabuto_calendar .table-bordered tr.calendar-month-header th {
+    border-left: 0;
+    border-right: 0;
+}
+
+div.zabuto_calendar .table-bordered tr.calendar-month-header th:first-child {
+    border-left: 1px solid #dddddd;
+}
+
+div.zabuto_calendar div.calendar-month-navigation {
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    padding-top: 5px;
+}
+
+div.zabuto_calendar tr.calendar-dow-header th,
+div.zabuto_calendar tr.calendar-dow td {
+    width: 14%;
+}
+
+div.zabuto_calendar .table tr td div.day {
+    margin: 0;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+/* actions and events */
+div.zabuto_calendar .table tr td.event div.day,
+div.zabuto_calendar ul.legend li.event {
+    background-color: #fff0c3;
+}
+
+div.zabuto_calendar .table tr td.dow-clickable,
+div.zabuto_calendar .table tr td.event-clickable {
+    cursor: pointer;
+}
+
+/* badge */
+div.zabuto_calendar .badge-today,
+div.zabuto_calendar div.legend span.badge-today {
+    background-color: #357ebd;
+    color: #ffffff;
+    text-shadow: none;
+}
+
+div.zabuto_calendar .badge-event,
+div.zabuto_calendar div.legend span.badge-event {
+    background-color: #ff9b08;
+    color: #ffffff;
+    text-shadow: none;
+}
+
+div.zabuto_calendar .badge-event {
+    font-size: 0.95em;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 4px;
+}
+
+/* legend */
+div.zabuto_calendar div.legend {
+    margin-top: 5px;
+    text-align: right;
+}
+
+div.zabuto_calendar div.legend span {
+    color: #999999;
+    font-size: 10px;
+    font-weight: normal;
+}
+
+div.zabuto_calendar div.legend span.legend-text:after,
+div.zabuto_calendar div.legend span.legend-block:after,
+div.zabuto_calendar div.legend span.legend-list:after,
+div.zabuto_calendar div.legend span.legend-spacer:after {
+    content: ' ';
+}
+
+div.zabuto_calendar div.legend span.legend-spacer {
+    padding-left: 25px;
+}
+
+div.zabuto_calendar ul.legend > span {
+    padding-left: 2px;
+}
+
+div.zabuto_calendar ul.legend {
+    display: inline-block;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+
+div.zabuto_calendar ul.legend li {
+    display: inline-block;
+    height: 11px;
+    width: 11px;
+    margin-left: 5px;
+}
+
+div.zabuto_calendar ul.legend
+div.zabuto_calendar ul.legend li:first-child {
+    margin-left: 7px;
+}
+
+div.zabuto_calendar ul.legend li:last-child {
+    margin-right: 5px;
+}
+
+div.zabuto_calendar div.legend span.badge {
+    font-size: 0.9em;
+    border-radius: 5px 5px 5px 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 3px;
+}
+
+
+
+
+
+
+
+
+
+/*---------------------------------------
+   Hair colour css   
+-----------------------------------------*/
+.hair-page-banner{
+    background-image: url('images/hair_color_bg.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 100px 0;
+}
+.contact-us-txt{
+    text-align: center;
+    }
+    .contact-us{
+        font-family: 'Aston Bold';
+    font-size: 54px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: 5.4px;
+    color:#5b5452;
+    padding-top: 106px;
+    padding-bottom: 125px;
+    }
+
+
+.styling-content{
+    text-align: center;
+}
+    .styling-txt{
+        font-family: 'AvenirNext Bold';
+        font-size: 12px;
+    font-weight: 700;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 3.6;
+        text-transform: uppercase;
+        color: #d6cec9;
+        padding-top: 89px;
+    }
+    .color-and-styling{
+        opacity: 0.33;
+        font-family: 'Aston Bold';
+        font-size: 56px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 0.67;
+        letter-spacing: 5.4px;
+        color: rgba(91, 84, 82, 0.33);
+        padding-top: 20px;
+    }
+    .hair-color-styling{
+        font-family: 'NeutraDisp Bold';
+        font-size: 37px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 0.97;
+        letter-spacing: normal;
+        color: #847a75;
+      }
+      .tvar{
+        width: 100px;
+        height: 2px;
+        margin: 3px 10px 0 13px;
+        justify-content: center;
+        background-color: #e6bca3;
+        margin: auto;
+      }
+      .tvar-two{
+          
+        width: 50px;
+        height: 2px;
+        margin: 3px 10px 0 13px;
+        justify-content: center;
+        background-color: #e6bca3;
+        margin: auto;
+      }
+    .hair-color-content{
+        font-family: 'AvenirNext Bold';
+        font-size: 15px;
+        font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  text-align: center;
+  color: #9f9793;
+  padding-top: 30px;
+    }
+
+
+    .carousel-team-photo{
+        text-align: center;
+    }
+    .team-craousle{
+        padding-top: 36px;
+    }
+    .balayge-name{
+
+        font-family: 'NeutraDisp Bold';
+        font-size: 26px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 0.83;
+        letter-spacing: normal;
+        text-align: center;
+        color: #5b5452;
+        padding-top: 36px;
+    }
+.team-second-row{
+    padding-top: 30px;
+}
+    .carousel-indicators li{
+        border-radius: 12%;
+    box-sizing: content-box;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    width: 25px;
+    height: 19px;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #000;
+    background-clip: padding-box;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    opacity: .5;
+    transition: opacity .6s ease;
+    }
+
+
+    .carousel-inner{
+        padding-bottom: 100px;
+    }
+    #carouselExampleIndicators{
+        margin-bottom: 118px;
+    }
+
+
+    .insta-row-one{
+        padding-top: 86px;
+    }
+    .insta-row-two{
+        padding-bottom: 90px;
+    }
+
+
+
+
+    /*---------------------------------------
+   Hair-colour-two css   
+-----------------------------------------*/
+.hair-design-row{
+    padding-top: 58px;
+}
+
+.design-show-more-btn{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 122px;
+}
+
+.images-group-one{
+    padding-top: 32px ;
+}
+.design-show-more-btn-images-group{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 55px;
+}
+.hair-page2-banner{
+    background-image:  linear-gradient(0deg, rgb(2 2 2 / 75%), rgb(0 0 0 / 35%)), url('images/hair_color_bg2.png');;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 100px 0;
+}
+
+.hair-styling2{
+    background-color: #f5f5f5;
+}
+.hair-and-styling2{
+    text-align: center;
+}
+.contact-us2{
+    font-family: 'Aston Bold';
+    font-size: 54px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.67;
+    letter-spacing: 5.4px;
+    color: #ffffff;
+    padding-top: 106px;
+    padding-bottom: 125px;
+}
+
+.styling-2{
+    font-family: 'Aston Bold';
+    font-size: 54px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.67;
+    letter-spacing: 5.4px;
+    /* text-align: left; */
+    color: #24243a;
+    padding-top: 63px;
+}
+.styling2-content{
+    font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: #555555;
+  padding-top: 28px;
+}
+.styling-catagory-points {
+    padding-top: 70px;
+}
+
+
+.styling-catagory-points .points-list li{
+list-style: none;
+}
+.po{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.88;
+  letter-spacing: normal;
+  /* text-align: left; */
+  color: #555555;
+    padding-left: 18px;
+}
+ a.bookonline {
+    font-family: 'Poppins', sans-serif;
+    padding: 16px 59px 16px 59px;
+    background-color: #1b2336;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.97;
+    letter-spacing: normal;
+    text-align: justify;
+    color: #ffffff;
+    
+}
+.booking-callus{
+    padding-top: 67px;
+    padding-bottom: 58px;
+    text-align: center;
+}
+/* a.call-us-btn{
+    font-family: 'Poppins', sans-serif;
+    padding: 16px 59px 16px 59px;
+    background-color: #1b2336;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.97;
+    letter-spacing: normal;
+    text-align: justify;
+    color: #ffffff;
+}  */
+
+.hower-book-call-div{
+    margin-top: 88px;
+    text-align: center;
+    padding-bottom: 58px;
+}
+a.hower-book{
+    font-family: 'Poppins', sans-serif;
+    padding: 16px 59px 16px 59px;
+    background-color: #1b2336;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.97;
+    letter-spacing: normal;
+    text-align: justify;
+    color: #ffffff;
+}
+a.hower-call{
+    font-family: 'Poppins', sans-serif;
+    padding: 16px 59px 16px 59px;
+    background-color: #1b2336;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.97;
+    letter-spacing: normal;
+    text-align: justify;
+    color: #ffffff;
+}
+
+.hair-imges{
+width: 100%;
+}
+
+
+.hair-design-imges:hover .overlay {
+    opacity: 0.68;
+    background-color: #1b2336;
+  }
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .overlay {
+    position: absolute;
+    top: 11px;
+    bottom: 1px;
+    left: 0;
+    right: 0;
+    height: 93%;
+    width: 85%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #080808;
+    margin: 0 auto;
+    
+}
+
+
+
+
+
+
+.hair-extension-banner{
+    background-image:  linear-gradient(0deg, rgb(2 2 2 / 75%), rgb(0 0 0 / 35%)), url('images/hair-ex-for-men-womenbg.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 100px 0;
+}
+
+#hair-extension-con{
+    text-align: -webkit-center;
+}
+
+.styling-content {
+    padding-top: 45px;
+}
+section.book-now-section {
+    padding-top: 54px;
+}
+section.instagram-feeds {
+    padding-top: 0px;
+}
+.excutive-imges{
+    width: 78%;
+}
+.te:hover .excutive-overlay {
+    opacity: 0.68;
+    background-color: #1b2336;
+  }
+  .exct-text{
+    color: white;
+    font-size: 14px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+.excutive-overlay{
+    top: 86px;
+    bottom: 1px;
+    left: 0;
+    right: 0;
+    height: 82%;
+    width: 62%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #080808;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 100%;
+    
+
+}
+
+
+
+
+#carouselExampleIndicators2 {
+    margin-bottom: 46px;
+}
+
+
+.hair-extension-div{
+    width: 633px;
+    height: 246px;
+    opacity: 0.72;
+    background-color: #ffffff;
+    text-align: center;
+}
+.hair-extension-txt{
+    font-family: 'Aston Bold';
+    font-size: 40px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    /* line-height: 0.68; */
+    letter-spacing: 4px;
+    /* text-align: left; */
+    color: #5b5452;
+    padding-top: 45px;
+}
+
+section.book-now-section {
+    padding-top: 54px;
+    padding-bottom: 69px;
+}
+
+.book-now-img{
+    padding-top: 13px;
+}
+.book-now{
+    font-family: 'NeutraDisp Bold';
+    font-size: 35px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.75;
+  letter-spacing: normal;
+  text-align: left;
+  color: #7a7573;
+  padding-top: 40px;
+}
+.book-now-content{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #050505;
+    padding-top: 22px;
+}
+.book-online-btn{
+    text-align: end;
+    margin-top: 18px;
+}
+a.book-online{
+    font-family: 'baskoldface';
+    font-size: 18.5px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+    padding: 17px 35px 19px 40px;
+    background-color: #5b5452;
+}
+
+
+.insta-row-one2 {
+    padding-top: 32px;
+}
+.insta-row-two2 {
+    padding-bottom: 40px;
+}
+.design-show-more-btn2 {
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+
+/* ........................................................................................
+hair restiration
+................................................................................... */
+
+.hair-restration-banner{
+    background-image:  linear-gradient(0deg, rgb(2 2 2 / 75%), rgb(0 0 0 / 35%)), url('images/hair-restbg.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 100px 0;
+}
+
+
+
+
+.goalsachive{
+    background-image:url('images/goals-bg.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 100px 0;
+}
+
+.cards-col{
+    text-align: center; border-radius: 20.4px;
+                background-color: #f1d9c0;
+}
+.achive-goal-title{
+    font-family: 'NeutraDisp Bold';
+    font-size: 17px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.47;
+    letter-spacing: normal;
+    text-align: center;
+    color: #847a75;
+    padding-top: 55px;
+}
+.achive-goal-content{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14.5px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.76;
+    letter-spacing: normal;
+    text-align: center;
+    color: #050505;
+    padding-top: 28px;
+    padding-bottom: 60px;
+}
+
+.goal-cards{
+    width: 310px;
+    border-radius: 20.4px;
+    background-color: #f1d9c0;
+   
+}
+.card-one{
+    position: relative;
+
+}
+.card-border{
+    width: 314px;
+  height: 470px;
+    position: absolute;
+    margin: 0 60px 24px 19px;
+    opacity: 0.5;
+    border: solid 3px #8c6239;
+    border-radius: 20.4px;
+    top: -5%;
+    left: 4%;
+}
+
+.call-us-div{
+    margin-left: 67px;
+    margin-top: 12%;
+    width: 100%;
+    height: 67%;
+    background-color: #5b5452b0;
+
+}
+.call-us-btn{
+    margin-left: 61%;
+}
+a.call-us-btn-txt{
+    font-family: 'baskoldface';
+    font-size: 18.5px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+    padding: 17px 35px 19px 40px;
+    background-color: #5b5452;
+}
+.call-us-content{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.26;
+    letter-spacing: normal;
+    color: #ffffff;
+    padding: 45px 55px 44px 43px;
+}
+
+
+.recomd{
+    font-family: 'Aston Bold';
+    font-size: 54px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.67;
+    letter-spacing: 5.4px;
+    text-align: center;
+    color: #5b5452;
+    padding-top: 50%;
+    padding-bottom: 216px;
+}
+.recomd-txt-div{
+    position: relative;
+}
+.recomd-border1{
+    width: 94%;
+    height: 100%;
+    position: absolute;
+    margin: 0 60px 24px 19px;
+    opacity: 0.5;
+    border: 3px solid #8c6239;
+    top: 4%;
+    left: 1%;
+}
+.recomd-border2{
+    width: 90%;
+    height: 100%;
+    position: absolute;
+    margin: 0 60px 24px 19px;
+    opacity: 0.5;
+    border: 3px solid #8c6239;
+    top: 7%;
+    left: 3%;
+}
+
+.recpmd-content-head{
+    font-family: 'baskoldface';
+  font-size: 38px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.21;
+  letter-spacing: normal;
+  color: #050505;
+  padding-top: 110px;
+    padding-left: 58px;
+}
+.recomd-content{
+    font-family: 'Poppins', sans-serif;
+  font-size: 17px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.12;
+  letter-spacing: normal;
+  text-align: justify;
+  color: #050505;
+  padding-left: 58px;
+  padding-right: 100px;
+  padding-top: 41px;
+  padding-bottom: 70px;
+}
+.men-before-after-container{
+    padding-top: 100px;
+}
+
+.hair-before-txt{
+    font-family: 'NeutraDisp Bold';
+  font-size: 43px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.75;
+  letter-spacing: normal;
+  text-align: left;
+  color: #847a75;
+  padding-top: 66px;
+
+}
+.before-women-pic{
+margin-top: 63px;
+}
+.women-before-txt{
+    font-family: 'NeutraDisp Bold';
+    font-size: 35px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.75;
+    letter-spacing: normal;
+    text-align: left;
+    color: #847a75;
+    padding-top: 66px;
+    padding-left: 29px;
+}
+.women-before-content{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #050505;
+    padding-top: 30px;
+    padding-left: 29px;
+}
+.women-before-txt2{
+
+}
+.hair-before-content{
+    font-family: 'Poppins', sans-serif;
+  font-size: 17px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.10;
+  letter-spacing: normal;
+  text-align: left;
+  color: #050505;
+  padding-top: 30px;
+}
+
+.hair-before-txt2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #76726d;
+    padding-top: 35px;
+    padding-bottom: 65px;
+}
+.women-before-after-container{
+    margin-bottom: 82px;
+}
+
+
+
+
+
+.questions-head{
+    font-family: 'Aston Bold';
+    opacity: 0.33;
+    font-size: 54px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.67;
+    letter-spacing: 5.4px;
+    text-align: center;
+    padding-top: 46px;
+    color: rgba(91, 84, 82, 0.33);
+}
+.still-question{
+    font-family: 'NeutraDisp Bold';
+  font-size: 45px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.75;
+  letter-spacing: normal;
+  text-align: center;
+  color: #5b5452;
+}
+.still-question-two{
+    font-family: 'NeutraDisp Bold';
+    font-size: 32px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: center;
+    color: #5b5452;
+    padding-top: 29px;
+}
+
+
+div#womendesk {
+    margin-top: 20px;
+}
+.question-pics{
+    padding-left: 8px;
+    padding-right: 7px;
+}
+
+
+
+
+    /* .............................................................................................................. */
+    /* ............................................................................................................. */
+    .about-us-banner{
+        background: linear-gradient(0deg, rgb(2 2 2 / 75%), rgb(0 0 0 / 35%)), url(images/abo.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        }
+        .cart{
+            font-family: 'Aston Bold';
+            font-size: 101px;
+            opacity: 1.5;
+            font-weight: 900;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 0.67;
+            letter-spacing: 5.4px;
+            color: #725C42;
+            padding-top: 106px;
+            }
+            .about-us-div{
+            text-align: center;
+            padding-bottom: 110px;
+            }
+            .about-us-txt{
+            z-index: 999;
+            margin-top: -72px;
+            font-weight: 700;
+            font-style: normal;
+            font-family: 'Montserrat', sans-serif;
+            color: #ffffff;
+            font-size: 60px;
+            line-height: 1.4;
+            letter-spacing: 1px;
+            }
+        .line1{
+        padding-top: 1px;background-color: gray;
+        }
+        .new-york{
+        font-weight: 700;
+        font-style: normal;
+        font-family: 'Montserrat', sans-serif;
+        color: #bb9151;
+        font-size: 12px;
+        line-height: 1.4;
+        letter-spacing: 3px;
+        }
+        .curly-hair{
+        font-weight: 600;
+        font-style: normal;
+        font-family: 'Montserrat', sans-serif;
+        color: #282828;
+        font-size: 46px;
+        line-height: 1;
+        letter-spacing: 0px;
+        }
+        .extension{
+        font-weight: 600;
+        font-style: normal;
+        font-family: 'Montserrat', sans-serif;
+        color: #282828;
+        font-size: 46px;
+        line-height: 1;
+        letter-spacing: 0px;
+        }
+        .learn-div{
+        margin-top: 58px;
+        margin-bottom: 140px;
+        }
+        .learn-more{
+        margin-top: 58px;
+        padding: 15px 40px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        color: black;
+        background-color: white;
+        border:2px solid #bb9151;
+        }
+        .learn-more:hover{
+        color: white;
+        background-color:#BB9151;
+        }
+        .curl-salon{
+        font-weight: 400;
+        font-style: normal;
+        font-family: 'Montserrat', sans-serif;
+        color: black;
+        font-size: 18px;
+        line-height: 1.5;
+        letter-spacing: 0px;
+        }
+        #benf{
+        background-image: url(images/benifits-bg.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color:#282828;
+        opacity: 0.6;
+        }
+        .benifits-points ul li{
+        list-style: none;
+        }
+        .why-chose-us{
+        font-weight: 700;
+        font-style: normal;
+        font-family: 'Montserrat', sans-serif;
+        color: #bb9151;
+        font-size: 12px;
+        line-height: 1.4;
+        letter-spacing: 3px;
+        }
+        .our-benfits{
+        font-weight: 600;
+        font-style: normal;
+        font-family: 'Montserrat', sans-serif;
+        color: #ffffff;
+        font-size: 46px;
+        line-height: 1.2;
+        letter-spacing: 0px;
+        }
+        .benifits-points{
+        font-weight: 500;
+        font-style: normal;
+        font-family: 'Montserrat', sans-serif;
+        color: #ffffff;
+        font-size: 17px;
+        line-height: 1.8;
+        letter-spacing: 0px;
+        }
+        .fa-check:before {
+        content: "\f00c";
+        left: 0;
+        z-index: 0;
+        /* font: 15px/1 FontAwesome; */
+        color: #f4d6a8;
+        content: "\f00c";
+        text-align: center;
+        }
+        #benifits-row{
+        margin: 0;
+        }
+        #benfits-img{
+        padding: 0px;
+        height: 100%;
+        }
+        .parentBenifits{
+        padding-left: 70px;
+        padding-top: 90px;
+        padding-bottom: 30px;
+        }
+        .chose-us .our-benfits{
+        padding-bottom: 60px;
+        }
+        .linesdiv{
+        padding-top: 50px;
+        padding-bottom: 80px;
+        }
+        .teams-intro{
+        padding-top: 126px;
+        text-align: center;
+        padding-bottom: 67px;
+        }
+        .our-team{
+        font-weight: 600;
+        font-style: normal;
+        font-family: 'Montserrat', sans-serif;
+        color: #282828;
+        font-size: 50px;
+        line-height: 1.3;
+        letter-spacing: 0px;
+        }
+        .our-expert{
+        font-weight: 300;
+        font-style: normal;
+        font-family: 'Open Sans', sans-serif;
+        color: #282828;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0px;
+        }
+        .card-title{
+        font-weight: 500;
+        font-style: normal;
+        font-family: 'Montserrat', sans-serif;
+        color: #bb9151;
+        font-size: 18px;
+        line-height: 1.8;
+        letter-spacing: 0px;
+        }
+        .card-text{
+        font-weight: 300;
+        font-style: normal;
+        font-family: 'Open Sans', sans-serif;
+        color: #282828;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0px;
+        }
+    
+        .become{
+            background-color: #393333;
+            }
+            .ten-per{
+            font-family: 'Oswald', sans-serif;
+            font-size: 29px;
+            font-weight: 600;
+            margin-top: 42px;
+            margin-bottom: 42px;
+            }
+            .member-dis{
+            font-family: 'Oswald', sans-serif;
+            font-size: 21px;
+            font-weight: 300;
+            color: white;
+            }
+            .frm{
+            display: flex;
+            margin-top: 54px;
+            }
+            .form-control {
+            display: block;
+            width: 69%;
+            padding: 30px 10px 32px 10px;
+            /* height: calc(1.5em + .75rem + 2px); */
+            /* padding: .375rem .75rem; */
+            /* font-size: 1rem; */
+            font-weight: 400;
+            line-height: 1.5;
+            color: #495057;
+            background-color: #fff;
+            background-clip: padding-box;
+            /* border: 1px solid #ced4da; */
+            /* border-radius: .25rem; */
+            transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+            }
+            i.far.fa-heart {
+            padding-left: 31px;
+            padding-right: 13px;
+            }
+            .member-btn{
+            padding: 20px 5px 20px 30px;;
+            background-color: black;
+            color: white;
+            text-transform: uppercase;
+            }
+        /* .............................................................................................................. */
+        /* ............................................................................................................. */
+
+        /* ....................................Hair-Color-with-Form........................................... */
+.hair-color-form-banner{
+    background: linear-gradient(0deg, rgb(2 2 2 / 75%), rgb(0 0 0 / 35%)), url(images/hair-extension-with-form.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.hair-color-form-txt{
+    font-family: 'Aston Bold';
+    font-size: 54px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: 5.4px;
+    color :white;
+    padding-top: 106px;
+    padding-bottom: 125px;
+}
+ /*---------------------------------------
+    GET IN TOUCH       
+    -----------------------------------------*/
+    .get-in-touch{
+        font-family: 'Barlow Condensed', sans-serif;
+        font-weight: 700;
+        text-decoration: underline;
+        font-size: 26px;
+        padding-top: 75px;
+        color: #635d5b;
+        }
+        .any-question-form {
+        font-family: 'Barlow Condensed', sans-serif;
+        font-weight: 500;
+        font-size: 74px;
+        color: #635d5b;
+        }
+        .call-us-form {
+        font-family: 'Barlow Condensed', sans-serif;
+        font-weight: 500;
+        font-size: 26px;
+        color: #635d5b;
+        padding-top: 68px;
+        }
+        .send-us-form{
+        font-family: 'Barlow Condensed', sans-serif;
+        font-weight: 500;
+        font-size: 26px;
+        color: #635d5b;
+        }
+        .call-us-number-form {
+        font-family: 'Barlow Condensed', sans-serif;
+        font-weight: 600;
+        font-size: 42px;
+        color: #635d5b;
+        }
+        .email-form{
+        font-family: 'Barlow Condensed', sans-serif;
+        font-weight: 600;
+        font-size: 42px;
+        color: #635d5b;
+        padding-bottom: 214px;
+        }
+        .send-form{
+        margin-top: 75px;
+        }
+        input#name {
+        width: 100%;
+        font-size: 20px;
+        padding-left: 40px;
+        font-family: 'Barlow Condensed', sans-serif;
+        border-radius: 0px;
+        background-color: #f3f3f3;
+        padding-top: 44px;
+        padding-bottom: 44px;
+        }
+        input#email {
+        width: 100%;
+        font-size: 20px;
+        padding-left: 40px;
+        font-family: 'Barlow Condensed', sans-serif;
+        border-radius: 0px;
+        background-color: #f3f3f3;
+        padding-top: 44px;
+        padding-bottom: 44px;
+        }
+        textarea#message {
+        width: 100%;
+        font-size: 20px;
+        padding-left: 40px;
+        font-family: 'Barlow Condensed', sans-serif;
+        border-radius: 0px;
+        background-color: #f3f3f3;
+        }
+        button#submit {
+        padding: 30px;
+        background-color: #5b5452;
+        color: white;
+        }
+        li.crosl-indicatior{
+            border-radius: 50%;
+    width: 20px;
+        }    
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ..................................................Our-Work--------------------- */
+
+        div#carouselExampleIndicator {
+            margin-bottom: 53px;
+        }
+        section.gallary-crosal {
+            margin-top: 100px;
+        }
+
+
+        /* about-us-2 */
+        .Main{
+            padding-top: 95px;
+        }
+        .Main p{
+            font-family: 'Myridpro';
+            text-align: right;
+            font-size: 12px;
+            line-height: 1.9;
+        }
+        .para1{
+            padding-bottom: 70px;
+        }
+        .para2{
+            padding-bottom: 70px;
+        }
+        .para3{
+            padding-bottom: 70px;
+        }
+        /*........................................*/
+        .Mainspeclist{
+            text-align: center;
+            padding-top: 90px;
+            padding-bottom: 80px;
+        }
+        .Mainspeclist h1{
+            font-family: 'NeutraDisp Bold';
+            font-weight: 800;
+            text-transform: uppercase;
+            padding-bottom: 15px;
+        }
+        .Mainspeclist p{
+            font-family: 'Open Sans', sans-serif;
+            padding-bottom: 20px;
+            font-style: italic;
+        }
+
+        .carddiv{
+            background-color: white;
+            text-transform: uppercase;
+            color: #000000;
+            width: 290px;
+            padding: 30px 13px;
+            position: relative;
+            margin-top: -96px;
+            left: 77px;
+        }
+        .carddiv h6{
+            font-family: 'Poppins', sans-serif;
+            font-size: 12px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.71;
+            letter-spacing: normal;
+            text-align: center;
+            color: #000000;
+        }
+        .carddiv1 h6{
+            font-family: 'Poppins', sans-serif;
+            font-size: 12px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.71;
+            letter-spacing: normal;
+            text-align: center;
+            color: #ffffff;
+        }
+        .carddiv1{
+            background-color: #1b2336;
+            text-transform: uppercase;
+            color: #ffffff;
+            width: 290px;
+            padding: 26px 17px;
+            position: relative;
+            margin-top: -96px;
+            left: 75px;
+        }
+
+
+
+
+        /* .................Contact-us-2......................... */
+        .maincont2{
+            padding-top: 160px;
+            padding-bottom: 90px;
+            }
+            .maincont2 h6{
+            text-transform:
+            uppercase;color: #BB916C;
+            }
+            .maincont2 h1{
+            font-weight: 600
+            }
+        
+        
+            /* ............................HAIR EXTENSION 3...................... */
+            .hair-extension3-banner{
+                background-image:  linear-gradient(0deg, rgb(2 2 2 / 75%), rgb(0 0 0 / 35%)), url('images/hair-ex-for-men-womenbg.png');
+                background-position: center center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                padding: 100px 0;
+            }
+
+            .hair-extension3-div{
+                width: 633px;
+                height: 142px;
+                opacity: 0.72;
+                background-color: #ffffff;
+                text-align: center;
+            }
+
+
+            /* HAIR-EXTENSION-FOR-MEN2 */
+            .hair-extension-men-div{
+                width: 729px;
+                height: 149px;
+                opacity: 0.72;
+                background-color: #ffffff;
+                text-align: center;
+            }
+
+
+
+
+            /* .......................................HAIR-RESTRATION33............................ */
+            .hair_restration33-banner{
+                background-image:  linear-gradient(0deg, rgb(2 2 2 / 75%), rgb(0 0 0 / 35%)), url('images/restration33.png');
+                background-position: center center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                padding: 100px 0;
+            }
+            .img1{
+                width: 100%;
+            }
+            .textset{
+                /*display: flex;*/
+                text-align: justify;
+                padding-left: 70px;
+                padding-top: 50px;
+                padding-bottom: 20px;
+                color: #d19f68;
+                font-family: 'Poppins', sans-serif;
+            }
+            .textset1{
+                text-align: justify;
+                padding-left: 50px;
+                font-size: 14px;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 300;
+            }
+            .textarea{
+                background-color: #edeaeb;
+            }
+            .btnset{
+                padding: 8px 40px 8px 40px;
+                border-radius: 3px 3px 3px 3px;
+                font-family: Poppins;
+                border: none;
+                background-color: #1b2336;
+                color: white;
+            }
+            .twobtns{
+                margin-left: 50px;
+                padding-bottom: 51px;
+                padding-top: 30px;
+            }
+            .btnset2 {
+                padding: 8px 60px 8px 60px;
+                border-radius: 3px 3px 3px 3px;
+                font-family: Poppins;
+                border: none;
+                background-color: #5b5452;
+                color: white;
+            }
+            h1.restoration33-txt {
+                font-family: 'Aston Bold';
+                font-size: 54px;
+                font-weight: 500;
+                font-stretch: normal;
+                font-style: normal;
+                letter-spacing: 5.4px;
+                color: white;
+                padding-top: 106px;
+                padding-bottom: 125px;
+                
+            }
